@@ -43,7 +43,7 @@ public class LoginServiceTest {
     @Test
     public void addLoginTest(){
         monLogSer.addLogin(login2);
-        assertEquals(alreadyAdd,monLogSer);
+        assertTrue(alreadyAdd.findAllLogins().containsAll(monLogSer.findAllLogins()));
     }
 
     @Test
@@ -53,7 +53,7 @@ public class LoginServiceTest {
 
     @Test
     public void findAllLoginsTest(){
-        assertEquals(maliste,monLogSer.findAllLogins());
+        assertEquals(maliste,alreadyAdd.findAllLogins());
     }
 
 }

@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 /**
  * Classe representant un generateur de login
  */
-public class git LoginGenerator {
+public class LoginGenerator {
 
     private LoginService loginService;
 
