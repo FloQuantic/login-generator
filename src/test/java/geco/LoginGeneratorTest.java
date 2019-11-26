@@ -13,6 +13,7 @@ public class LoginGeneratorTest {
     private String test1 = "FTHI";
     private String test2 = "JROL1";
     private String test3 = "JRAL2";
+    private String test4 = "PDU";
 
     @Test
     public void generateLoginForNomAndPrenomTest1() {
@@ -27,5 +28,10 @@ public class LoginGeneratorTest {
     @Test
     public void generateLoginForNomAndPrenomTest3() {
         assertEquals(test3,monGen.generateLoginForNomAndPrenom("Ralbat","Jackie"));
+    }
+
+    @Test
+    public void generateLoginForNomAndPrenomTest4() {
+        assertEquals(test4,monGen.generateLoginForNomAndPrenom("Du","Paul"));
     }
 }
