@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class PasswordGeneration {
 
-    private PasswordGeneration monGen;
+    private static PasswordGeneration monGen;
 
     private PasswordGeneration() { }
 
-    public PasswordGeneration getInstance(){
+    public static PasswordGeneration getInstance(){
         if (monGen==null){
             monGen = new PasswordGeneration();
         }
