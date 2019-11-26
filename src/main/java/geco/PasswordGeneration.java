@@ -8,7 +8,7 @@ public class PasswordGeneration {
 
     private PasswordGeneration() { }
 
-    private PasswordGeneration getInstance(){
+    public PasswordGeneration getInstance(){
         if (monGen==null){
             monGen = new PasswordGeneration();
         }
