@@ -1,4 +1,4 @@
-#Docs
+# Docs
 * LoginGenerator
     * generateLoginForNomAndPrenom(String nom, String prenom)
     * deAccent(String str)
